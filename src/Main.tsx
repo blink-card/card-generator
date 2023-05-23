@@ -1,4 +1,4 @@
-import { StyleSheet, View } from 'react-native';
+import { SafeAreaView, StyleSheet, View } from 'react-native';
 import Text from './components/utility/Text';
 import React from 'react';
 import Theme from './config/themes';
@@ -21,7 +21,7 @@ const ExampleElement = (props: { exampleText: string }): JSX.Element => (
 );
 
 const Main = (): JSX.Element => (
-  <View style={styles.container}>
+  <SafeAreaView style={styles.container}>
     <AppBar />
     <Routes>
       <Route path="/" element={<ExampleElement exampleText="Ulubione" />} />
@@ -31,6 +31,6 @@ const Main = (): JSX.Element => (
         element={<ExampleElement exampleText="Przedmioty" />}
       />
     </Routes>
-  </View>
+  </SafeAreaView>
 );
 export default Main;
