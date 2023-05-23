@@ -5,6 +5,7 @@ import DefaultTheme from './themes/default';
 import { Route, Routes } from 'react-router-native';
 import AppBar from './components/AppBar';
 import TileList from './components/TileList';
+import { spellTiles } from './data/spellData';
 
 const styles = StyleSheet.create({
   container: {
@@ -25,7 +26,7 @@ const Main = (): JSX.Element => (
     <AppBar />
     <Routes>
       <Route path="/" element={<ExampleElement exampleText="Ulubione" />} />
-      <Route path="/spells" element={<TileList />} />
+      <Route path="/spells" element={<TileList tiles={spellTiles} />} />
       <Route
         path="/items"
         element={<ExampleElement exampleText="Przedmioty" />}
