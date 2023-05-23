@@ -13,8 +13,8 @@ const AppBar = (): JSX.Element => (
   <View style={styles.container}>
     <ScrollView horizontal>
       <AppBarTab path="/" label="Ulubione" />
-      <AppBarTab path="/" label="Zaklęcia" />
-      <AppBarTab path="/" label="Przedmioty" />
+      <AppBarTab path="/spells" label="Zaklęcia" />
+      <AppBarTab path="/items" label="Przedmioty" />
     </ScrollView>
   </View>
 );

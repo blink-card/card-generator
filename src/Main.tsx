@@ -13,9 +13,9 @@ const styles = StyleSheet.create({
   },
 });
 
-const ExampleElement = (): JSX.Element => (
+const ExampleElement = (props: { exampleText: string }): JSX.Element => (
   <View>
-    <Text>Hello World!</Text>
+    <Text>{`Witaj ${props.exampleText}`}</Text>
   </View>
 );
 
@@ -23,9 +23,16 @@ const Main = (): JSX.Element => (
   <View style={styles.container}>
     <AppBar />
     <Routes>
-      <Route path="/" element={<ExampleElement />} />
+      <Route path="/" element={<ExampleElement exampleText="Ulubione" />} />
+      <Route
+        path="/spells"
+        element={<ExampleElement exampleText="Zaklęcia" />}
+      />
+      <Route
+        path="/items"
+        element={<ExampleElement exampleText="Przedmioty" />}
+      />
     </Routes>
   </View>
 );
-
 export default Main;
