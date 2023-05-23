@@ -1,10 +1,13 @@
-import { Text, View } from 'react-native';
 import React from 'react';
+import Main from './Main';
+import { NativeRouter } from 'react-router-native';
 
 const App = (): JSX.Element => (
-  <View>
-    <Text>Hello there</Text>
-  </View>
+  <>
+    <NativeRouter>
+      <Main />
+    </NativeRouter>
+  </>
 );
 
 export default App;
