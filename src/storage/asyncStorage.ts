@@ -45,7 +45,6 @@ export const storeData = async (key: string, value: unknown): Promise<void> => {
 export const getData = async (key: string): Promise<string> => {
   try {
     const value = await AsyncStorage.getItem(buildKey(key));
-    console.log('get here ' + value);
     if (value !== null) return value;
     throw new Error();
   } catch (error) {
