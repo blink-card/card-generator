@@ -4,7 +4,7 @@ import React from 'react';
 import DefaultTheme from './themes/default';
 import { Route, Routes } from 'react-router-native';
 import AppBar from './components/AppBar';
-import TileList from './components/TierList';
+import TileList from './components/TileList';
 
 const styles = StyleSheet.create({
   container: {

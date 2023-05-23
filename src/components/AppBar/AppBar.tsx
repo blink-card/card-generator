@@ -1,9 +1,12 @@
 import { ScrollView, StyleSheet, View } from 'react-native';
+import Constants from 'expo-constants';
 import Theme from '../../themes/default';
 import AppBarTab from './AppBarTab';
 
 const styles = StyleSheet.create({
   container: {
+    paddingVertical: Constants.statusBarHeight * 0.5,
+    paddingHorizontal: Constants.statusBarHeight * 0.25,
     backgroundColor: Theme.colors.navBackground,
     flexDirection: 'row',
   },
