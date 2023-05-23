@@ -1,6 +1,6 @@
 # Card Generator
 Application will allow for creation of custom spell & item cards for D&D 5e.
-It also stores the created cards in a library and 
+It also stores the created cards in a library and
 allows to export these cards to pdf documents that can be easily printed.
 
 ## Setup

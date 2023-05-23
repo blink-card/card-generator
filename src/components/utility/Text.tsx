@@ -4,7 +4,7 @@ import {
   TextProps as NativeTextProps,
 } from 'react-native';
 
-import Theme from '../../config/themes';
+import Theme from '../../themes/default';
 
 const styles = StyleSheet.create({
   text: {

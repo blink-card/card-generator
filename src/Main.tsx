@@ -1,16 +1,16 @@
 import { SafeAreaView, StyleSheet, View } from 'react-native';
 import Text from './components/utility/Text';
 import React from 'react';
-import Theme from './config/themes';
+import DefaultTheme from './themes/default';
 import { Route, Routes } from 'react-router-native';
 import AppBar from './components/AppBar';
-import TileList from './components/TileList';
+import TileList from './components/TierList';
 
 const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
     flexShrink: 1,
-    backgroundColor: Theme.colors.background,
+    backgroundColor: DefaultTheme.colors.background,
   },
 });
 
