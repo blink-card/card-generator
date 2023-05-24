@@ -1,10 +1,10 @@
 import { Dimensions, FlatList, StyleSheet, View } from 'react-native';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Tile from '../Tile';
-import { tileData } from '../../data/spellData';
+import { TileDetails } from '../../data/interfaces/tileDetails.interface';
 
 interface TileListProps {
-  tiles: Array<tileData>;
+  tiles: Array<TileDetails>;
 }
 
 const styles = StyleSheet.create({
@@ -21,7 +21,11 @@ const screenWidth =
 const tileSize = screenWidth / numColumns;
 
 const TileList = ({ ...props }: TileListProps): JSX.Element => {
-  const [tiles, _setTiles] = useState(props.tiles);
+  const [tiles, setTiles] = useState([]);
+  useEffect(() => {
+    setTiles(props.tiles);
+  }, [props.tiles]);
+
   return (
     <FlatList
       data={tiles}
