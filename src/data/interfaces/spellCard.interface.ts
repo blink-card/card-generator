@@ -1,8 +1,8 @@
 import { DndSchool } from '../enums/dndSchool.enum';
 import { DndClass } from '../enums/dndClass.enum';
+import { _Card } from './_card.interface';
 
-export interface SpellCard {
-  title: string;
+export interface SpellCard extends _Card {
   school: DndSchool;
   spellLevel: 'sztuczka' | number;
   isRitual: boolean;
@@ -15,7 +15,5 @@ export interface SpellCard {
   };
   duration: string;
   concentration: boolean;
-  description: string;
-  source?: string;
   classes: Array<DndClass>;
 }
