@@ -7,7 +7,7 @@ export const itemTiles: Array<TileDetails> = [
   },
   {
     title: 'Rarity',
-    description: 'filterSpellsByRarity',
+    description: 'filterItemsByRarity',
   },
   {
     title: 'All',
