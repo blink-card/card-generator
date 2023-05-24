@@ -12,6 +12,12 @@ interface TileProps {
   };
 }
 
+interface _TargetTileProps extends TileProps {
+  image: string;
+  path: string;
+  filter?: string;
+}
+
 const styles = StyleSheet.create({
   container: {
     backgroundColor: DefaultTheme.colors.tileBackground,
