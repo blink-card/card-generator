@@ -18,6 +18,7 @@ const AppBar = (): JSX.Element => (
       <AppBarTab path="/" label="Ulubione" />
       <AppBarTab path="/spells" label="Zaklęcia" />
       <AppBarTab path="/items" label="Przedmioty" />
+      <AppBarTab path="/add-card" label="test-tab" />
     </ScrollView>
   </View>
 );

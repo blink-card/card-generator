@@ -7,6 +7,7 @@ import TileList from './components/TileList';
 import { itemTiles } from './data/itemTiles.data';
 import { spellTiles } from './data/spellTiles.data';
 import PlaceholderElement from './components/utility/PlaceholderElement';
+import AddCard from './components/AddCard';
 
 const styles = StyleSheet.create({
   container: {
@@ -23,6 +24,7 @@ const Main = (): JSX.Element => (
       <Route path="/" element={<PlaceholderElement exampleText="Ulubione" />} />
       <Route path="/spells" element={<TileList tiles={spellTiles} />} />
       <Route path="/items" element={<TileList tiles={itemTiles} />} />
+      <Route path="/add-card" element={<AddCard />} />
     </Routes>
   </SafeAreaView>
 );
