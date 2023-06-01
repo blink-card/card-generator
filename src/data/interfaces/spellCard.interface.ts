@@ -8,11 +8,10 @@ export interface SpellCard extends _Card {
   isRitual: boolean;
   castingTime: string;
   range: string;
-  components: {
-    verbal: boolean;
-    semantic: boolean;
-    material: boolean | string;
-  };
+  materialComponent: boolean;
+  semanticComponent: boolean;
+  verbalComponent: boolean;
+  materialComponentDetails?: string;
   duration: string;
   concentration: boolean;
   classes: Array<DndClass>;

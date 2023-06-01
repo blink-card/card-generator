@@ -1,5 +1,5 @@
 export enum DndClass {
-  BARBARIAN = 'Barbarian',
+  BARBARIAN = 'Barbarzyńca',
   BARD = 'Bard',
   CLERIC = 'Kleryk',
   DRUID = 'Druid',
