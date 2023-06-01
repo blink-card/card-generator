@@ -29,6 +29,9 @@ const styles = StyleSheet.create({
   fontSizeSubheading: {
     fontSize: Theme.fontSizes.subheading,
   },
+  fontSizeHeader: {
+    fontSize: Theme.fontSizes.header,
+  },
   fontWeightBold: {
     // @ts-ignore: fontWeights.bold is valid value
     fontWeight: Theme.fontWeights.bold,
@@ -55,6 +58,7 @@ const Text = ({
     color === 'primary' && styles.colorPrimary,
     color === 'error' && styles.colorTextError,
     fontSize === 'subheading' && styles.fontSizeSubheading,
+    fontSize === 'header' && styles.fontSizeHeader,
     fontWeight === 'bold' && styles.fontWeightBold,
     style,
   ];

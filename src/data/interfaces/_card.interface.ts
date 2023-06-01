@@ -1,4 +1,4 @@
-type implementedCards = 'spell' | 'item';
+export type implementedCards = 'spell' | 'item';
 
 export interface _Card {
   title: string;

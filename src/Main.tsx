@@ -24,7 +24,8 @@ const Main = (): JSX.Element => (
       <Route path="/" element={<PlaceholderElement exampleText="Ulubione" />} />
       <Route path="/spells" element={<TileList tiles={spellTiles} />} />
       <Route path="/items" element={<TileList tiles={itemTiles} />} />
-      <Route path="/add-card" element={<AddCard />} />
+      <Route path="/add-spell" element={<AddCard cardType="spell" />} />
+      <Route path="/add-item" element={<AddCard cardType="item" />} />
     </Routes>
   </SafeAreaView>
 );
