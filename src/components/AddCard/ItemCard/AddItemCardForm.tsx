@@ -5,23 +5,29 @@ import { FormikSubmit } from '../AddCard';
 
 const AddItemCardForm = ({ onSubmit }: FormikSubmit): JSX.Element => (
   <SafeAreaView>
-    <FormikTextInput
-      name="attunementDetails"
-      placeholder="Attunement process"
-    />
-    <FormikTextInput name="description" placeholder="Item description" />
-    <FormikTextInput
-      name="isWondrous"
-      placeholder="This should be a checkbox"
-    />
-    <FormikTextInput name="rarity" placeholder="Item rarity, list" />
-    <FormikTextInput name="requiresAttunement" placeholder="Checkbox" />
+    <FormikTextInput name="title" placeholder="Nazwa przedmiotu" />
+    <FormikTextInput name="description" placeholder="Opis przedmiotu" />
     <FormikTextInput
       name="source"
-      placeholder="Which source book the item comes form"
+      placeholder="Z jakiej książki pochodzi przedmiot?"
     />
-    <FormikTextInput name="title" placeholder="Item name" />
-    <FormikTextInput name="type" placeholder="Item type" />
+    <FormikTextInput
+      name="isWondrous"
+      placeholder="Checkbox: Czy przedmiot jest cudowny?"
+    />
+    <FormikTextInput name="type" placeholder="Typ przedmiotu" />
+    <FormikTextInput
+      name="rarity"
+      placeholder="List: Jak rzadki jest przedmiot?"
+    />
+    <FormikTextInput
+      name="requiresAttunement"
+      placeholder="Checkbox: Czy wymaga zestrojenia?"
+    />
+    <FormikTextInput
+      name="attunementDetails"
+      placeholder="Sczegóły procesu zestrojenia"
+    />
     <Pressable onPress={onSubmit}>
       <Text fontWeight="bold">Save Item</Text>
     </Pressable>
