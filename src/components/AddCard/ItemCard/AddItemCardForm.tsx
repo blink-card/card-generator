@@ -1,5 +1,5 @@
 import { Pressable, SafeAreaView } from 'react-native';
-import FormikTextInput from '../../utility/FormikTextInput';
+import FormikTextInput from '../../utility/Formik/FormikTextInput';
 import Text from '../../utility/Text';
 import { FormikSubmit } from '../AddCard';
 

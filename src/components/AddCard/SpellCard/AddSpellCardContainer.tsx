@@ -24,7 +24,7 @@ const AddSpellCardContainer = ({ onSubmit }: FormikSubmit): JSX.Element => {
     materialComponentDetails: '',
     duration: '',
     concentration: false,
-    classes: [DndClass.BARBARIAN, DndClass.CLERIC],
+    classes: undefined,
   };
 
   const validationSchema = Yup.object().shape({
@@ -34,9 +34,9 @@ const AddSpellCardContainer = ({ onSubmit }: FormikSubmit): JSX.Element => {
     source: Yup.string().optional(),
     school: Yup.mixed<DndSchool>()
       .oneOf(Object.values(DndSchool))
-      .required('Podaj szkołę magii do której należy zaklęcie.'),
-    spellLevel: Yup.string().matches(/^(?:sztuczka|[0-9])$/i, {
-      message: 'Podaj cyfrę od 1 do 9 lub "Sztuczka".',
+      .required('Wybierz szkołę magii do której należy zaklęcie.'),
+    spellLevel: Yup.string().matches(/^(?:sztuczka|[0-9] krąg)$/i, {
+      message: 'Wybierz jedną z opcji.',
     }),
     isRitual: Yup.boolean().required('Zaznacz czy zaklęcie jest rytuałem.'),
     castingTime: Yup.string().required(
@@ -68,6 +68,7 @@ const AddSpellCardContainer = ({ onSubmit }: FormikSubmit): JSX.Element => {
       'Zaznacz czy zaklęcie wymaga koncentracji.',
     ),
     classes: Yup.array()
+      .min(1, 'Wybierz przynajmniej 1 klasę.')
       .of(Yup.mixed<DndClass>().oneOf(Object.values(DndClass)))
       .required('Podaj klasy, które mogą korzystać z zaklęcia.'),
   });
