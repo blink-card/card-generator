@@ -13,6 +13,8 @@ const DefaultTheme = {
     error: '#cc0000',
     lighterRed: '#e60000',
     separator: '#909090',
+    placeholder: '#a0a0a0',
+    grayButton: '#8d8989',
   },
   fontSizes: {
     body: 14,
