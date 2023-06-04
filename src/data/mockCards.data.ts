@@ -88,7 +88,7 @@ const mockSpellCards: SpellCard[] = [
 
 const mockItemCards: ItemCard[] = [
   {
-    cardType: 'spell',
+    cardType: 'item',
     description: loremIpsum,
     isFavourite: true,
     source: 'Podręcznik Gracza',
@@ -100,11 +100,11 @@ const mockItemCards: ItemCard[] = [
     attunementDetails: null,
   },
   {
-    cardType: 'spell',
+    cardType: 'item',
     description: `${loremIpsum.slice(0, loremIpsum.length / 2)}`,
     isFavourite: false,
     source: 'Podręcznik Gracza',
-    title: 'Przedmiot` #2',
+    title: 'Przedmiot #2',
     isWondrous: true,
     type: 'Dowolny miecz dwuręczny',
     rarity: DndRarity.UNCOMMON,
@@ -112,7 +112,7 @@ const mockItemCards: ItemCard[] = [
     attunementDetails: null,
   },
   {
-    cardType: 'spell',
+    cardType: 'item',
     description: loremIpsum,
     isFavourite: true,
     source: null,
@@ -124,7 +124,7 @@ const mockItemCards: ItemCard[] = [
     attunementDetails: 'Wymaga zestrojenia z klerykiem.',
   },
   {
-    cardType: 'spell',
+    cardType: 'item',
     description: `${loremIpsum},${loremIpsum}`,
     isFavourite: false,
     source: 'Przewodnik Xanathara',
