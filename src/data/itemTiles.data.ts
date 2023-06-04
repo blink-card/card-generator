@@ -2,15 +2,18 @@ import { TileDetails } from './interfaces/tileDetails.interface';
 
 export const itemTiles: Array<TileDetails> = [
   {
-    title: 'Add',
+    title: 'Dodaj przedmiot',
     description: 'addItem',
+    path: '/add-item',
   },
   {
-    title: 'Rarity',
+    title: 'Filtruj po rzadkości',
     description: 'filterItemsByRarity',
+    path: '/add-item',
   },
   {
-    title: 'All',
+    title: 'Wszystkie',
     description: 'listAllItems',
+    path: '/add-item',
   },
 ];

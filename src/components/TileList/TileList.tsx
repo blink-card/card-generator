@@ -1,6 +1,6 @@
 import { Dimensions, FlatList, StyleSheet, View } from 'react-native';
 import React, { useEffect, useState } from 'react';
-import Tile from '../Tile';
+import Tile from './Tile';
 import { TileDetails } from '../../data/interfaces/tileDetails.interface';
 
 interface TileListProps {
@@ -39,6 +39,7 @@ const TileList = ({ ...props }: TileListProps): JSX.Element => {
             height: tileSize,
             margin: singleTileMargin,
           }}
+          path={item.path}
         />
       )}
       numColumns={numColumns}
