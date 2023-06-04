@@ -1,5 +1,5 @@
 1. List View
-2. Mock Data + state handling
+2. <s>Mock Data + state handling</s>
 3. Add filters for list view
 4. Add option to set favourite
 5. Add singular card details view

@@ -9,11 +9,11 @@ export const itemTiles: Array<TileDetails> = [
   {
     title: 'Filtruj po rzadkości',
     description: 'filterItemsByRarity',
-    path: '/add-item',
+    path: '/item-list/rarity',
   },
   {
     title: 'Wszystkie',
     description: 'listAllItems',
-    path: '/add-item',
+    path: '/item-list/all',
   },
 ];

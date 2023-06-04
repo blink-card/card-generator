@@ -9,16 +9,16 @@ export const spellTiles: Array<TileDetails> = [
   {
     title: 'Filtruj po klasie',
     description: 'filterSpellsByClass',
-    path: '/add-spell',
+    path: '/spell-list/class',
   },
   {
     title: 'Filtruj po szkole',
     description: 'filterSpellsBySchool',
-    path: '/add-spell',
+    path: '/spell-list/school',
   },
   {
     title: 'Wszystkie',
     description: 'listAllSpells',
-    path: '/add-spell',
+    path: '/spell-list/all',
   },
 ];

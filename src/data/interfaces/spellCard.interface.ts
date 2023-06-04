@@ -4,7 +4,7 @@ import { _Card } from './_card.interface';
 
 export interface SpellCard extends _Card {
   school: DndSchool;
-  spellLevel: 'sztuczka' | number;
+  spellLevel: string;
   isRitual: boolean;
   castingTime: string;
   range: string;
