@@ -7,3 +7,4 @@
 7. Upgrade addItem form
 8. Add Docs (start asap and continue adding)
 9. Add tests
+10. Allow export to pdf (create custom HTML to print (?))
