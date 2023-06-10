@@ -1,7 +1,7 @@
-import Text from '../utility/Text';
 import { SpellCard } from '../../data/interfaces/spellCard.interface';
 import { ItemCard } from '../../data/interfaces/itemCard.interface';
 import { useParams } from 'react-router-native';
+import CardListContainer from './CardListContainer';
 
 interface CardListProps {
   data: Array<SpellCard | ItemCard>;
@@ -10,14 +10,7 @@ interface CardListProps {
 const CardList = ({ data }: CardListProps): JSX.Element => {
   const filter: string = useParams().filter;
 
-  const cards = JSON.stringify(data, null, 2);
-
-  return (
-    <>
-      <Text>{cards}</Text>
-      <Text>Hello {filter === 'all' ? null : filter}</Text>
-    </>
-  );
+  return <CardListContainer data={data} filter={filter} />;
 };
 
 export default CardList;
